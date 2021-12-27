@@ -1,3 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+.main-color {
+  color: rgb(33, 169, 55);
+}
+
+.header-wrapper {
+  height: 130px;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 80%;
+}
+
+.header-info-reception {
+  font-size: 1.4rem;
+  margin-bottom: 7px;
+  line-height: 2rem;
+}
+
+.fv {
+  background: url(/images/fv.png);
+  height: 947px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fv-wrapper {
+  width: 79%;
+  margin: 0 auto;
+  padding: 133px 0px;
+}
+
+.fv-title {
+  writing-mode: vertical-lr;
+}
+
+.fv-title-inner {
+  display: block;
+  background-color: #fff;
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  padding: 18px 35px 65px;
+  margin-right: 80px;
 }
