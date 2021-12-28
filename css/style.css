@@ -78,7 +78,7 @@ header {
 
 /* concept */
 .concept {
-  padding: 162px 0 82px;
+  margin: 162px 0 82px;
 }
 
 .concept-wrapper {
@@ -103,9 +103,12 @@ header {
 }
 
 .underline-main {
-  display: inline-block;
   background: linear-gradient(transparent 70%, #99e5a5 70%);
   padding-right: 8px;
+}
+
+.concept-message-title span {
+  display: inline-block;
 }
 
 .concept-message-title > span:last-child {
@@ -114,4 +117,62 @@ header {
 
 .concept-image {
   border-radius: 10px;
+}
+
+/* therapy */
+.therapy {
+  background-color: #f5fcf8;
+  padding-top: 78px;
+}
+
+.therapy-title {
+  font-size: 2.4rem;
+  line-height: 3.8rem;
+  text-align: center;
+  margin-bottom: 79px;
+}
+
+.therapy-text {
+  font-size: 1.6rem;
+  line-height: 3.8rem;
+  text-align: center;
+}
+
+.therapy-wrapper {
+  max-width: 1180px;
+  margin: 34px auto 86px;
+  display: flex;
+  gap: 20px;
+  width: 80%;
+}
+
+.card {
+  position: relative;
+  width: calc((100% - 40px) / 3);
+  padding: 47px 28px 257px;
+  background-color: #fff;
+  border: 2px solid #c9c9c9;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 2.4rem;
+  line-height: 3.8rem;
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+.card-body {
+  font-size: 1.6rem;
+  line-height: 3.8rem;
+  font-weight: bold;
+}
+
+.card-image {
+  width: 187px;
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
