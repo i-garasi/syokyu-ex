@@ -3,11 +3,15 @@
 }
 
 html {
+  /* ---フォントサイズを10pxに統一する指定--- */
+  /* https://www.esz.co.jp/blog/28.html */
   font-size: 62.5%;
 }
 
 body {
   font-family: "Noto Sans JP", sans-serif;
+  /* rem: root要素 = htmlタグに指定されているフォントサイズをベースに相対的にフォントサイズを指定する単位 */
+  /* 1.6rem = 10px × 1.6で 16px という計算になる。remの計算をしやすいようにhtml要素でfont-sizeを62.5%に合わせている。 */
   font-size: 1.6rem;
   line-height: 1.4;
   color: #444;
@@ -37,6 +41,8 @@ header {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  /* ---フレックスアイテムを上下に対して中央配置する指定--- */
+  /* https://developer.mozilla.org/ja/docs/Web/CSS/align-items */
   align-items: center;
   padding: 0 20px;
   width: 80%;
@@ -57,6 +63,8 @@ header {
 
 /* first-view */
 .fv {
+  /* ---ファーストビューの背景画像指定--- */
+  /* https://developer.mozilla.org/ja/docs/Web/CSS/background */
   background: url(/images/fv.png);
   height: 947px;
   background-size: cover;
@@ -71,6 +79,8 @@ header {
 }
 
 .fv-title {
+  /* ---縦書きフォントの指定--- */
+  /* https://developer.mozilla.org/ja/docs/Web/CSS/writing-mode */
   writing-mode: vertical-lr;
 }
 
@@ -110,6 +120,8 @@ header {
 }
 
 .underline-main {
+  /* ---下線の指定--- */
+  /* https://developer.mozilla.org/ja/docs/Web/CSS/gradient/linear-gradient() */
   background: linear-gradient(transparent 70%, #99e5a5 70%);
   padding-right: 8px;
 }
@@ -118,6 +130,8 @@ header {
   display: inline-block;
 }
 
+/* ---親要素内にある同じタグ種別の子要素のうち最後のものだけにスタイルを当てる場合--- */
+/* https://developer.mozilla.org/ja/docs/Web/CSS/:last-child */
 .concept-message-title > span:last-child {
   margin: 32px 0 37px;
 }
@@ -149,11 +163,15 @@ header {
   max-width: 1180px;
   margin: 34px auto 0;
   display: flex;
+  /* ---フレックスアイテムの要素間の幅を指定--- */
+  /* https://zenn.dev/tonkotsuboy_com/articles/2021-css-new-features#flexbox%E3%81%A7gap%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E3%82%92%E4%BD%BF%E3%81%86 */
   gap: 20px;
   width: 80%;
 }
 
 .card {
+  /* ---ポジション指定について--- */
+  /* https://www.youtube.com/watch?v=4d4UxPq5kZo */
   position: relative;
   width: calc((100% - 40px) / 3);
   padding: 47px 28px 257px;
