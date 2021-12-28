@@ -13,8 +13,22 @@ body {
   color: #333;
 }
 
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
 .main-color {
   color: rgb(33, 169, 55);
+}
+
+/* header */
+header {
+  height: 130px;
 }
 
 .header-wrapper {
@@ -34,6 +48,7 @@ body {
   line-height: 2rem;
 }
 
+/* first-view */
 .fv {
   background: url(/images/fv.png);
   height: 947px;
@@ -59,4 +74,44 @@ body {
   line-height: 3.4rem;
   padding: 18px 35px 65px;
   margin-right: 80px;
+}
+
+/* concept */
+.concept {
+  padding: 162px 0 82px;
+}
+
+.concept-wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  width: 80%;
+}
+
+.concept-message {
+  margin: 31px 49px 31px 31px;
+}
+
+.concept-message-title {
+  font-size: 2.4rem;
+  line-height: 3.5rem;
+}
+
+.concept-messge-body {
+  font-size: 1.6rem;
+  line-height: 3.8rem;
+}
+
+.underline-main {
+  display: inline-block;
+  background: linear-gradient(transparent 70%, #99e5a5 70%);
+  padding-right: 8px;
+}
+
+.concept-message-title > span:last-child {
+  margin: 32px 0 37px;
+}
+
+.concept-image {
+  border-radius: 10px;
 }
