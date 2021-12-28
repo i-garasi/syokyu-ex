@@ -10,7 +10,7 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   line-height: 1.4;
-  color: #333;
+  color: #444;
 }
 
 a {
@@ -140,7 +140,7 @@ header {
 
 .therapy-wrapper {
   max-width: 1180px;
-  margin: 34px auto 86px;
+  margin: 34px auto 0;
   display: flex;
   gap: 20px;
   width: 80%;
@@ -175,4 +175,85 @@ header {
   bottom: 0;
   right: 0;
   left: 0;
+}
+
+/* info */
+.info {
+  padding: 88px 0 112px;
+  background-color: #f5fcf8;
+}
+
+.info-title {
+  font-size: 2.4rem;
+  line-height: 3.8rem;
+  text-align: center;
+  margin-bottom: 74px;
+}
+
+.info-wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 49px 66px;
+  text-align: right;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  width: 80%;
+}
+
+.info-row {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 2px solid #e7e7e7;
+}
+
+.info-data-title {
+  display: flex;
+  gap: 36px;
+}
+
+.info-date {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+}
+
+.info-tag {
+  width: 80px;
+  background: #444;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.info-detail {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.info-button {
+  position: relative;
+  display: inline-block;
+  margin-top: 40px;
+  color: #444;
+  font-weight: bold;
+}
+
+.info-button:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: solid 7px transparent;
+  border-bottom: solid 7px transparent;
+  border-left: solid 10px #444444;
+  position: absolute;
+  top: 0;
+  right: -18px;
+  bottom: 0;
+  margin: auto;
 }
